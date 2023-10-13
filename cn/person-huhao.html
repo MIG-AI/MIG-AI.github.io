@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./common.css">
+    <style>
+        .content .name {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px 0;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 200px;
+            background-size: cover;
+            background-position: center center;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+        }
+
+        .description {
+            padding: 20px 0;
+        }
+    </style>
+    <title>People</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="concent-wrap">
+            <header class="header">
+                <div class="logo"></div>
+                <!--<div class="language"><a href="../person-huhao.html">English</a></div>-->
+                <nav class="nav">
+                    <ul>
+                        <li><a href="./index.html">首页</a></li>
+                        <li  class="active"><a href="./people.html">人员</a></li>
+                        <li><a href="./publications.html">出版物</a></li>
+                        <li><a href="./news.html">新闻动态</a></li>
+                        <li><a href="./join.html">加入我们</a></li>
+                        <li><a href="../person-huhao.html">English</a></li>
+                    </ul>
+                </nav>
+                <div class="drawer-handle">
+                    <div class="drawer-mask"></div>
+                    <i class="drawer-handle-icon"></i>
+                </div>
+            </header>
+            <div class="content">
+                <div class="name">Hao Hu</div>
+                <div class="avatar" style="background-image: url('./asset/huhao.jpg');"></div>
+                <p style="margin-bottom: 0;"><span style="font-weight: bold;">Master Candidate</span> <br />
+                    Mengminwei Science and Technology Building, Tsinghua University, Haidian, Beijing, 100084, China<br />
+                    <a href="mailto:hu-h19@mails.tsinghua.edu.cn">hu-h19@mails.tsinghua.edu.cn</a> </p>
+                <a href="https://mousehu.github.io/person/">个人主页</a> </p>
+                <div class="description">
+                    I am a master student in the Machine Intelligence Lab at Tsinghua University, starting at September 2019. 
+                    My research interest include reinforcement learning and representation learning for reinforcement learning. 
+                    I graduated with a Bachelor of Science in Theoretical and Applied Mechanics degree from Peking University in July 2019, 
+                    and with a double major in Computer Science and Technology.
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var drawer = document.querySelector(".drawer-handle");
+    var nav = document.querySelector(".nav");
+    drawer.addEventListener("click", function (e) {
+        var e = e || window.event, target = e.target || e.srcElement; // 兼容IE
+        if (target.className === "drawer-handle") {
+            target.className = "drawer-handle drawer-open";
+            nav.className = "nav nav-open";
+            document.body.style.position = "fixed";
+        } else {
+            target.className = "drawer-handle";
+            nav.className = "nav";
+            document.body.style.position = "relative";
+        }
+    })
+</script>
+
+</html>

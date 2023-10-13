@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./common.css">
+    <style>
+        aside {
+            float: left;
+        }
+
+        .menu {
+            width: 200px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li {
+            list-style: none;
+            width: 150px;
+            padding: 5px 10px;
+            border: 1px solid #c0c0c0;
+            color: #696767;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .menu li:hover {
+            background: #518494;
+            border: 1px solid #518494;
+            color: #fff;
+        }
+
+        .menu li+li {
+            border-top: none;
+        }
+
+        .menu li.active {
+            background: #2f394f;
+            border: 1px solid #2f394f;
+            color: #fff;
+        }
+
+        article {
+            overflow: hidden;
+            margin-left: 200px;
+        }
+
+        article .title {
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+            /*改height*/
+        .publication-content {
+            width: calc(100% + 21px);
+            /*width: 100%;*/
+            max-height: 820px;
+            overflow-y: scroll;
+        }
+
+        .publication-content>div {
+            padding: 10px 0;
+        }
+
+        .publication-content .title {
+            text-align: left;
+            font-size: 20px;
+        }
+
+        .publication-content::after {
+            content: "";
+            display: block;
+            /* height: 200px; */
+        }
+
+        .publication-content ul li {
+            margin: 15px;
+        }
+
+        .publication-content ul li a {
+            font-weight: bold;
+        }
+
+        @media screen and (max-width:649px) {
+            aside {
+                display: none;
+            }
+
+            article {
+                margin-left: 0;
+            }
+
+            .publication-content {
+                width: 100%;
+                max-height: max-content;
+                overflow-y: hidden;
+                padding-bottom: 100px;
+            }
+
+            .publication-content ul {
+                margin: 0;
+                padding: 5px;
+            }
+
+            .publication-content .title {
+                text-align: center;
+            }
+
+            .publication-content>div {
+                padding: 10px 0;
+            }
+        }
+    </style>
+    <title>出版物</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="concent-wrap">
+            <header class="header">
+                <div class="logo"></div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="./index.html">首页</a></li>
+                        <li><a href="./people.html">人员</a></li>
+                        <li class="active"><a href="./publications.html">论文</a></li>
+                        <li><a href="./news.html">新闻动态</a></li>
+                        <li><a href="./join.html">加入我们</a></li>
+                        <li><a href="../publications.html">English</a></li>
+                    </ul>
+                </nav>
+                <div class="drawer-handle">
+                    <div class="drawer-mask"></div>
+                    <i class="drawer-handle-icon"></i>
+                </div>
+            </header>
+            <div class="content">
+                <aside>
+                    <ul class="menu">
+                        <li class="active">预印本</li>
+                        <li>2023</li>
+                        <li>2022</li>
+                        <li>2021</li>
+                        <li>2020</li>
+                        <li>2019</li>
+                        <li>2018</li>
+                        <li>2017</li>
+                        <li>2016 & Before</li>
+                    </ul>
+                </aside>
+                <article>
+                    <div class="publication-content">
+                        <div id="content-Preprint">
+                            <div class="title active">
+                                预印本
+                            </div>
+                            <ul>
+                                
+
+                                <li>Siyang Wu*, Tonghan Wang*, Chenghao Li, Yang Hu, Chongjie Zhang.
+                                    <strong>Containerized Distributed Value-Based Multi-Agent Reinforcement Learning.
+                                    </strong>
+                                    Under Review, 2021.
+                                      <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a>
+                                    <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <a href="https://arxiv.org/pdf/2110.08169.pdf" target="_blank">[arXiv]</a>
+                                </li>
+
+                            
+
+                                  <li>Heng Dong*, Tonghan Wang*, Jiayuan Liu, Chi Han, Chongjie Zhang.
+                                    <strong>Birds of a Feather Flock Together: A Close Look at Cooperation Emergence via Multi-Agent RL.</strong>
+                                    Under Review, 2021.
+                                      <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a>
+                                    <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a>
+                                    <a href="https://arxiv.org/abs/2104.11455" target="_blank">[PDF]</a>
+                                </li>
+
+                                <li> Hangtian Jia, Yujing Hu, Yingfeng Chen, Chunxu Ren, Tangjie Lv, Changjie Fan, Chongjie Zhang.
+                                    <strong>Fever Basketball: A Complex, Flexible, and Asynchronized Sports Game Environment for Multi-agent Reinforcement Learning.</strong>
+                                    Under Review, 2020.
+                                      <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a>
+                                    <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <a href="https://arxiv.org/abs/2012.03204" target="_blank">[arXiv]</a>
+                                </li>
+                                  
+
+
+
+                                <li>Chenghao Li, Xiaoteng Ma, Chongjie Zhang, Jun Yang, Li Xia and Qianchuan Zhao.
+                                    <strong>SOAC: The Soft Option Actor-Critic Architecture.</strong>
+                                    Under Review, 2020.
+                                    <a href="https://arxiv.org/abs/2006.14363" target="_blank">[PDF]</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                        
+                        
+                        <div id="content-2023">
+                        	<div class="title active">
+                        		2023
+                        	</div>
+
+                            <ul>
+                                <li> Chengjie Wu, Pingzhong Tang, Jun Yang, Yujing Hu, Tangjie Lv, Changjie Fan, Chongjie Zhang.
+                                    <strong>Conservative Offline Policy Adaptation in Multi-Agent Games.
+                                    </strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2023.
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li> Hao Hu*, Yiqin Yang* Jianing Ye, Ziqing Mai, Chongjie Zhang.
+                                    <strong>Unsupervised Behavior Extraction via Random Intent Priors.
+                                    </strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2023.
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li> Wenzhe Li, Hao Luo, Zichuan Lin, Chongjie Zhang, Zongqing Lu, Deheng Ye.
+                                    <strong>A Survey on Transformers in Reinforcement Learning.
+                                    </strong>
+                                    Transactions on Machine Learning Research (TMLR), 2023.
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li> Ruiqi Zhu, Siyuan Li, Tianhong Dai, Chongjie Zhang, Oya Celiktutan.
+                                    <strong>Learning to Solve Tasks with Exploring Prior Behaviours.
+                                    </strong>
+                                    IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023.
+                                </li>
+                            </ul>
+
+                        	<ul>
+                        		<li> Jianhao Wang*, Jin Zhang*, Haozhe Jiang, Junyu Zhang, Liwei Wang, Chongjie Zhang. 
+                            		<strong>Offline Meta Reinforcement Learning with In-Distribution Online Adaptation.
+                            		</strong>
+                            		International Conference on Machine Learning (ICML), 2023.
+                            	</li>
+                        	</ul>
+                        	
+                        	<ul>
+                        		<li> Heng Dong, Junyu Zhang, Tonghan Wang, Chongjie Zhang. 
+                            		<strong>Symmetry-Aware Robot Design with Structured Subgroups.
+                            		</strong>
+                            		International Conference on Machine Learning (ICML), 2023.
+                            	</li>
+                        	</ul>
+                        	
+                        	<ul>
+                        		<li> Rui Yang, LIN Yong, Xiaoteng Ma, Hao Hu, Chongjie Zhang, Tong Zhang. 
+                            		<strong>What is Essential for Unseen Goal Generalization of Offline Goal-conditioned RL?
+                            		</strong>
+                            		International Conference on Machine Learning (ICML), 2023.
+                            	</li>
+                        	</ul>
+                        	
+                        	<ul>
+                        		<li> Hao Hu, Yiqin Yang, Qianchuan Zhao, Chongjie Zhang. 
+                            		<strong>The Provable Benefit of Unsupervised Data Sharing for Offline Reinforcement Learning.
+                            		</strong>
+                            		International Conference on Learning Representations (ICLR), 2023.
+                            		<a href="https://openreview.net/forum?id=MTTPLcwvqTt" target="_blank">[PDF]</a>
+                            	</li>
+                        	</ul>
+                        	<ul>
+                        		<li> Yiqin Yang, Hao Hu, Wenzhe Li, Siyuan Li, Jun Yang, Qianchuan Zhao, Chongjie Zhang. 
+                            		<strong>Flow to Control: Offline Reinforcement Learning with Lossless Primitive Discovery.
+                            		</strong>
+                            		AAAI Conference on Artificial Intelligence (AAAI), 2023.
+                            		<a href="https://arxiv.org/abs/2212.01105" target="_blank">[PDF]</a>
+                            	</li>
+                        	</ul>
+                        </div>
+                        
+                        
+                        <div id="content-2022">
+                            <div class="title active">
+                                2022
+                            </div>
+                            <ul>
+                                <li> [Alphabetical Order] Yipeng Kang, Tonghan Wang, Xiaoran Wu, Qianlan Yang, Chongjie Zhang.
+                                    <strong>Non-Linear Coordination Graphs.
+                                    </strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2022. <font color="blue">[Spotlight Paper]</font>
+                                    <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a> -->
+                                    <!-- <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <a href="https://arxiv.org/abs/2211.08404" target="_blank">[PDF]</a>
+                                </li>
+
+                                <li> Mingyang Liu*, Chengjie Wu*, Qihan Liu, Yansen Jing, Jun Yang, Pingzhong Tang, Chongjie Zhang.
+                                    <strong>Safe Opponent-Exploitation Subgame Refinement.
+                                    </strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2022.
+                                    <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a> -->
+                                    <!-- <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <a href="https://openreview.net/forum?id=YpHb0IVJu92" target="_blank">[PDF]</a>
+                                </li>
+
+                                <li> Rui Yang, Chenjia Bai, Xiaoteng Ma, Zhaoran Wang, Chongjie Zhang, Lei Han.
+                                    <strong>RORL: Robust Offline Reinforcement Learning via Conservative Smoothing.
+                                    </strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2022. <font color="blue">[Spotlight Paper]</font>
+                                    <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a> -->
+                                    <!-- <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <a href="https://arxiv.org/abs/2206.02829" target="_blank">[PDF]</a>
+                                </li>
+
+                                <li> Heng Dong*, Tonghan Wang*, Jiayuan Liu, Chongjie Zhang.
+                                    <strong>Low-Rank Modular Reinforcement Learning via Muscle Synergy.
+                                    </strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2022.
+                                    <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a> -->
+                                    <!-- <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <a href="https://arxiv.org/abs/2210.15479" target="_blank">[PDF]</a>
+                                </li>
+
+                                <li> Jin Zhang, Siyuan Li, Chongjie Zhang.
+                                    <strong>CUP: Critic-Guided Policy Reuse.
+                                    </strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2022. <font color="blue">[Spotlight Paper]</font>
+                                    <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a> -->
+                                    <!-- <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <a href="https://arxiv.org/abs/2210.08153" target="_blank">[PDF]</a> 
+                                </li>
+
+                                <li> Xi Chen, Ali Ghadirzadeh, Tianhe Yu, Yuan Gao, Jianhao Wang, Wenzhe Li, Liang Bin, Chelsea Finn, Chongjie Zhang.
+                                    <strong>Latent-Variable Advantage-Weighted Policy Optimization for Offline Reinforcement Learning.
+                                    </strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2022.
+                                    <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a> -->
+                                    <!-- <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <a href="https://arxiv.org/abs/2203.08949" target="_blank">[PDF]</a>
+                                </li>
+
+                                <li> Hao Hu*, Yiqin Yang*, Qianchuan Zhao, Chongjie Zhang.
+                                    <strong>On the Role of Discount Factor in Offline Reinforcement Learning.
+                                    </strong>
+                                    International Conference on Machine Learning (ICML), 2022.
+                                      <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a>
+                                    <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <a href="https://arxiv.org/abs/2206.03383" target="_blank">[PDF]</a>
+                                </li>
+
+                                <li> Qianlan Yang*, Weijun Dong*, Zhizhou Ren*, Jianhao Wang, Tonghan Wang, Chongjie Zhang.
+                                    <strong>Self-Organized Polynomial-Time Coordination Graphs.
+                                    </strong>International Conference on Machine Learning (ICML), 2022.
+                                       <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a> -->
+                                    <a href="https://github.com/yanQval/SOP-CG" target="_blank">[Code]</a>
+                                    <a href="https://arxiv.org/pdf/2112.03547.pdf" target="_blank">[arxiv]</a>
+                                </li>
+
+
+                                <li> Li Wang, Yujing Hu, Yupeng Zhang, Weixun Wang, Chongjie Zhang, Yang Gao, Jianye Hao, Tangjie Lv, Changjie Fan.
+                                    <strong>Individual Reward Assisted Multi-Agent Reinforcement Learning.
+                                    </strong>International Conference on Machine Learning (ICML), 2022.
+                                      <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a>
+                                    <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <!-- <a href="https://arxiv.org/pdf/2112.03547.pdf" target="_blank">[arxiv]</a> -->
+                                </li>
+
+                                <li> Mingyang Liu*, Chengjie Wu*, Qihan Liu, Yansen Jing, Jun Yang, Pingzhong Tang, Chongjie Zhang.
+                                    <strong>Safe Opponent-Exploitation Subgame Refinement.
+                                    </strong>
+                                    ICLR Workshop on Gamification and Multiagent Solutions, 2022.
+                                      <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a>
+                                    <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <a href="https://openreview.net/pdf?id=rGlwoqJag5" target="_blank">[PDF]</a>
+                                </li>
+
+
+                                <li>Lei Yuan*, Chenghe Wang*, Jianhao Wang, Fuxiang Zhang, Feng Chen, Cong Guan, Zongzhang Zhang, Chongjie Zhang, Yang Yu.
+                                    <strong>Multi-Agent Concentrative Coordination with Decentralized Task Representation.
+                                    </strong>
+                                    International Joint Conference on Artificial Intelligence (IJCAI), 2022.
+                                      <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a>
+                                    <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <!-- <a href="https://arxiv.org/pdf/2109.12508.pdf" target="_blank">[arXiv]</a> -->
+                                </li>
+
+                                <li>Jiahan Cao*, Lei Yuan*, Jianhao Wang, Shaowei Zhang, Chongjie Zhang, Yang Yu, De-Chuan Zhan.
+                                    <strong>LINDA: Multi-Agent Local Information Decomposition for Awareness of Teammates.
+                                    </strong>
+                                    SCIENCE CHINA Information Sciences, 2022.
+                                      <!-- <a target="_blank" href="https://sites.google.com/view/homophily">[Website]</a>
+                                    <a href="https://github.com/drdh/pymarl-SSDG/" target="_blank">[Code]</a> -->
+                                    <a href="https://arxiv.org/pdf/2109.12508.pdf" target="_blank">[arXiv]</a>
+                                </li>
+
+                            
+                                <li>Siyuan Li, Jin Zhang, Jianhao Wang, Yang Yu, Chongjie Zhang.
+                                    <strong>Active Hierarchical Exploration with Stable Subgoal Representation Learning.
+                                    </strong>
+                                    International Conference on Learning Representations (ICLR), 2022.
+                                    <a href="https://arxiv.org/abs/2105.14750" target="_blank">[arXiv]</a>
+                                    <a href="https://github.com/SiyuanLee/HESS" target="_blank">[Code]</a>
+                                    
+                                </li>
+                                
+                                <li>Tonghan Wang*, Liang Zeng*, Weijun Dong, Qianlan Yang, Yang Yu, Chongjie Zhang.
+                                    <strong>Context-Aware Sparse Deep Coordination Graphs.</strong>
+                                    International Conference on Learning Representations (ICLR), 2022. <font color="blue">[Spotlight Paper]</font>
+                                    <a href="https://arxiv.org/abs/2106.02886" target="_blank">[arXiv]</a>
+                                      <a href="  https://github.com/TonghanWang/CASEC-MACO-benchmark" target="_blank">[Code]</a>
+
+                                </li>
+
+                                <li>Rui Yang, Yiming Lu, Wenzhe Li, Hao Sun, Meng Fang, Yali Du, Xiu Li, Lei Han, Chongjie Zhang.
+                                    <strong>Rethinking Goal-Conditioned Supervised Learning and Its Connection to Offline RL.
+                                    </strong>
+                                    International Conference on Learning Representations (ICLR), 2022.
+                                    <a href="https://anonymous.4open.science/r/WGCSL-527C" target="_blank">[Code]</a>
+                                    <a href="https://arxiv.org/pdf/2202.04478.pdf" target="_blank">[PDF]</a>
+
+                                </li>
+
+                                <li>Xiaoteng Ma* , Yiqin Yang* , Hao Hu* , Qihan Liu , Jun Yang , Chongjie Zhang, Qianchuan Zhao, Bin Liang.
+                                    <strong>Offline Reinforcement Learning with Value-based Episodic Memory.
+                                    </strong>
+                                    International Conference on Learning Representations (ICLR), 2022.
+                                    <a href="https://arxiv.org/pdf/2110.09796.pdf" target="_blank">[arxiv]</a>
+                                </li>
+
+                                <li>Lei Yuan*， Jianhao Wang*, Fuxiang Zhang, Chenghe Wang, Zongzhang Zhang, Yang Yu, Chongjie Zhang.
+                                    <strong>Multi-Agent Incentive Communication via Decentralized Teammate Modeling.</strong>
+                                    AAAI Conference on Artificial Intelligence (AAAI), 2022
+                                    <a href="https://github.com/mansicer/MAIC" target="_blank">[Code]</a>
+                                     <a href="https://www.aaai.org/AAAI22Papers/AAAI-5737.YuanL.pdf" target="_blank">[PDF]</a> 
+       
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+
+
+
+                                       <div id="content-2021">
+                            <div class="title active">
+                                2021
+                            </div>
+                            <ul>
+
+                               
+
+                                <li>Chenghao Li, Chengjie Wu, Tonghan Wang, Jun Yang, Qianchuan Zhao and Chongjie Zhang.
+                                    <strong>Celebrating Diversity in Shared Multi-Agent Reinforcement Learning.</strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2021.
+                                     <a target="_blank" href="https://sites.google.com/view/celebrate-diversity-shared">[Website]</a>
+                                     <a href="https://github.com/lich14/CDS" target="_blank">[Code]</a>
+                                      <a href="https://arxiv.org/pdf/2106.02195.pdf" target="_blank">[PDF]</a>
+                                </li>
+                                 <li>Jianhao Wang*, Wenzhe Li*, Haozhe Jiang, Guangxiang Zhu, Siyuan Li, Chongjie Zhang.
+                                    <strong>Offline Reinforcement Learning with Reverse Model-based Imagination. </strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2021.
+                                    <a target="_blank" href="https://sites.google.com/view/romi-offlinerl/.">[Website]</a>
+                                    <a href="https://github.com/wenzhe-li/romi" target="_blank">[Code]</a>
+                                    <a href="https://arxiv.org/abs/2110.00188" target="_blank">[PDF]</a>
+                                </li>
+
+                                 <li>Lulu Zheng*, Jiarui Chen*, Jianhao Wang, Jiamin He, Yujing Hu, Yingfeng Chen, Changjie Fan, Yang Gao, Chongjie Zhang.
+                                <strong>Episodic Multi-agent Reinforcement Learning with Curiosity-driven Exploration.</strong>
+                                Advances in Neural Information Processing Systems (NeurIPS), 2021.
+                                <a href="https://github.com/kikojay/EMC" target="_blank">[Code]</a>
+                                <a href="https://arxiv.org/abs/2111.11032" target="_blank">[PDF]</a>    
+                            </li>
+
+                                 <li>Zhizhou Ren, Guangxiang Zhu, Hao Hu, Beining Han, Jianglun Chen, Chongjie Zhang.
+                                    <strong>On the Estimation Bias in Double Q-Learning.</strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2021.
+                                    <a href="https://github.com/Stilwell-Git/Doubly-Bounded-Q-Learning" target="_blank">[Code]</a>
+                                    <a href="https://arxiv.org/abs/2109.14419" target="_blank">[PDF]</a>
+                                </li>
+
+                                <li>Jianhao Wang*, Zhizhou Ren*, Beining Han, Jianing Ye, and Chongjie Zhang.
+                                    <strong>Towards Understanding Linear Value Decomposition in Cooperative Multi-Agent Q-Learning.</strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2021.
+                                    <a href="https://arxiv.org/abs/2006.00587" target="_blank">[PDF]</a>
+                                </li>
+
+
+                                 <li>Yao Mu, Yuzheng Zhuang, Bin Wang, Guangxiang Zhu, Wulong Liu, Jianyu Chen, Ping Luo, Shengbo Eben Li, Chongjie Zhang, Jianye HAO.
+                                    <strong> Model-Based Reinforcement Learning via Imagination with Derived Memory. </strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2021.
+                                    <a href="https://papers.nips.cc/paper/2021/file/4ebccfb3e317c7789f04f7a558df4537-Paper.pdf" target="_blank">[PDF]</a>
+                                </li>
+
+
+
+                              <li>Jin Zhang*, Jianhao Wang*, Hao Hu, Tong Chen, Yingfeng Chen, Changjie Fan and Chongjie Zhang.
+                                    <strong> MetaCURE: Meta Reinforcement Learning with Empowerment-Driven Exploration.</strong>
+                                    International Conference on Machine Learning (ICML), 2021.
+                                    <a href="https://github.com/NagisaZj/MetaCURE-Public" target="_blank">[Code]</a>
+                                    <a href="https://arxiv.org/abs/2006.08170" target="_blank">[PDF]</a>
+                                    
+
+                                </li>
+
+                                 <li>Hao Hu, Jianing Ye, Zhizhou Ren, Guangxiang Zhu, and Chongjie Zhang.
+                                    <strong> Generalizable Episodic Memory for Deep Reinforcement Learning.</strong>
+                                    International Conference on Machine Learning (ICML), 2021.
+                                    <a href="https://github.com/gem-icml2021/gem" target="_blank">[Code]</a>
+                                    <a href="https://arxiv.org/abs/2103.06469" target="_blank">[PDF]</a>
+                                     
+                                </li>
+
+                                   <li>Zhao rong Wang, Meng Wang, Jingqi Zhang, Yingfeng Chen, Chongjie Zhang.
+                                    <strong> Reward-Constrained Behavior Cloning.</strong>
+                                    International Joint Conference on Artificial Intelligence (IJCAI), 2021.
+                                </li>
+
+							<li>Tonghan Wang, Tarun Gupta, Anuj Mahajan, Bei Peng, Shimon Whiteson and Chongjie Zhang.
+                                    <strong>RODE: Learning Roles to Decompose Multi-Agent Tasks.</strong>
+                                    International Conference on Learning Representations (ICLR), 2021.
+                                         <a target="_blank" href="https://sites.google.com/view/rode-marl">[Website]</a>
+                                    <a href="https://github.com/TonghanWang/RODE" target="_blank">[Code]</a>
+                                    <a href="https://openreview.net/pdf?id=TTUVg6vkNjK" target="_blank">[PDF]</a>
+                                </li>
+							<li>Jianhao Wang*, Zhizhou Ren*, Terry Liu, Yang Yu and Chongjie Zhang.
+                                    <strong>QPLEX: Duplex Dueling Multi-Agent Q-Learning.</strong>
+                                     International Conference on Learning Representations (ICLR), 2021.
+                                <a target="_blank" href="https://sites.google.com/view/qplex-marl">[Website]</a>
+                                    <a href="https://github.com/wjh720/QPLEX" target="_blank">[Code]</a>
+                                    <a href="https://openreview.net/pdf?id=Rcmk0xxIQV" target="_blank">[PDF]</a>
+                                </li>
+                                <li>Yihan Wang*, Beining Han*, Tonghan Wang*, Heng Dong and Chongjie Zhang.
+                                    <strong>Off-Policy Multi-Agent Decomposed Policy Gradients.</strong>
+                                     International Conference on Learning Representations (ICLR), 2021.
+                                      <a target="_blank" href="https://sites.google.com/view/dop-mapg/">[Website]</a>
+                                    <a href="https://github.com/TonghanWang/DOP" target="_blank">[Code]</a>
+                                    <a href="https://openreview.net/pdf?id=6FqKiVAdI3Y" target="_blank">[PDF]</a>
+                                </li>
+
+                                <li>Siyuan Li*, Lulu Zheng*, Jianhao Wang and Chongjie Zhang.
+                                    <strong>Learning Subgoal Representations with Slow Dynamics.</strong>
+                                    International Conference on Learning Representations (ICLR), 2021.
+                                      <a target="_blank" href="https://sites.google.com/view/lesson-iclr">[Website]</a>
+                                      <a href="https://github.com/SiyuanLee/LESSON" target="_blank">[Code]</a>
+                                    <a href="https://openreview.net/pdf?id=wxRwhSdORKG" target="_blank">[PDF]</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="content-2020">
+                            <div class="title">
+                                2020
+                            </div>
+                            <ul>
+							<li>
+                                    Guangxiang Zhu*, Minghao Zhang*, Honglak Lee and Chongjie Zhang. 
+                                    <strong>Bridging Imagination and Reality for Model-Based Deep Reinforcement Learning.</strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2020.
+                                </li>
+								<li>
+                                    Yipeng Kang, Tonghan Wang and Gerard de Melo.
+                                    <strong>Incorporating Pragmatic Reasoning Communication into Emergent Language.</strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2020 (Spotlight).
+                                    <a href="https://arxiv.org/abs/2006.04109" target="_blank">[PDF]</a>
+                                </li>
+                                 <li>
+                                    Tonghan Wang, Heng Dong, Victor Lesser, and Chongjie Zhang.
+                                    <strong>ROMA: Multi-Agent Reinforcement Learning with Emergent Roles.</strong>
+                                    International Conference on Machine Learning (ICML), 2020.
+                                    <a target="_blank" href="https://sites.google.com/view/romarl">[Website]</a>
+                                    <a href="https://github.com/TonghanWang/ROMA" target="_blank">[Code]</a>
+                                    <a href="https://proceedings.icml.cc/static/paper_files/icml/2020/1080-Paper.pdf" target="_blank">[PDF]</a>
+                                </li>
+                                <li>
+                                    Yaohui Guo, Chongjie Zhang and X. Jessie Yang.
+                                    <strong>Modeling Trust Dynamics in Human-robot Teaming: A Bayesian Inference Approach.</strong>
+                                    Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems, 2020.
+                                    <a href="https://dl.acm.org/doi/abs/10.1145/3334480.3383007" target="_blank">[PDF]</a>
+                                </li>
+                                <li>
+                                    Tonghan Wang*, Jianhao Wang*, Chongyi Zheng, Chongjie Zhang.
+                                    <strong>Learning Nearly Decomposable Value Functions via Communication
+                                        Minimization.</strong>
+                                    International Conference on Learning Representations (ICLR), 2020. <font color="blue">[Spotlight Paper]</font>
+                                    <a target="_blank" href="https://sites.google.com/view/ndq">[Website]</a>
+                                    <a href=" https://github.com/TonghanWang/NDQ" target="_blank">[Code]</a>
+                                    <a href="https://openreview.net/pdf?id=HJx-3grYDB" target="_blank">[PDF]</a>
+                                </li>
+                                <li>
+                                    Tonghan Wang*, Jianhao Wang*, Yi Wu, Chongjie Zhang.
+                                    <strong>Influence-Based Multi-Agent Exploration.</strong>
+                                    International Conference on Learning Representations (ICLR), 2020.
+                                    <a target="_blank"
+                                        href="https://sites.google.com/view/influence-based-mae/">[Website]</a>
+                                    <a href=" https://github.com/TonghanWang/EITI-EDTI" target="_blank">[Code]</a>
+                                    <a href="https://openreview.net/pdf?id=BJgy96EYvr" target="_blank">[PDF]</a>
+                                </li>
+                                <li>
+                                    Guangxiang Zhu*, Zichuan Lin*, Guangwen Yang, Chongjie Zhang.
+                                    <strong>Episodic Reinforcement Learning with Associated Memory.</strong>
+                                    International Conference on Learning Representations (ICLR), 2020.
+                                    <a download href="https://openreview.net/pdf?id=HkxjqxBYDB">[PDF]</a>
+                                </li>
+                                <li>
+                                    Guangxiang Zhu*, Jianhao Wang*, Zhizhou Ren*, Chongjie Zhang.
+                                    <strong>Object-Oriented Dynamics Learning through Multi-Level Abstraction.</strong>
+                                    AAAI Conference on Artificial Intelligence (AAAI), 2020.
+                                    <a href="https://arxiv.org/pdf/1904.07482.pdf" download>[PDF]</a>
+                                    <a href="https://arxiv.org/abs/1904.07482" target="_blank">[arXiv]</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div id="content-2019">
+                            <div class="title">
+                                2019
+                            </div>
+                            <ul>
+                                <li>Siyuan Li*, Rui Wang*, Minxue Tang, Chongjie Zhang.
+                                    <strong> Hierarchical Reinforcement Learning with Advantage-Based Auxiliary
+                                        Rewards.</strong>
+                                    (NeurIPS), 2019.
+                                    <a download
+                                        href="http://papers.nips.cc/paper/8421-hierarchical-reinforcement-learning-with-advantage-based-auxiliary-rewards.pdf">
+                                        [PDF]</a><a href="https://arxiv.org/abs/1910.04450" target="_blank">[arXiv]</a>
+                                </li>
+                                <li>
+                                    Tianpei Yang, Jianye Hao, Zhaopeng Meng, Chongjie Zhang, Yan Zheng, Ze Zheng.
+                                    <strong>Efficiently Detecting and Optimally Responding Towards Sophisticated
+                                        Opponents.</strong>
+                                    Proc. of the 28th International Joint Conference on Artificial Intelligence (IJCAI)
+                                    , 2019.
+                                    <a href="https://arxiv.org/abs/1809.04240" target="_blank">[arXiv]</a>
+                                </li>
+                                <li>
+                                    Xinliang Song, Tonghan Wang, Chongjie Zhang.
+                                    <strong>Convergence of Multi-Agent Learning with a Finite Step Size in General-Sum
+                                        Games.</strong>
+                                    Proc. of the 18th International Conference on Autonomous Agents and Multiagent
+                                    Systems (AAMAS) ,2019.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aamas19-GA-SPP.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Siyuan Li, Fangda Gu, Guangxiang Zhu, and
+                                    Chongjie Zhang.
+                                    <strong>Context-Aware Policy Reuse.</strong>
+                                    AAMAS 2019: International Conference on Autonomous Agents and MultiAgent
+                                    Systems.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aamas19-CAPS.pdf"
+                                        download>[PDF]</a>
+                                    <a href="https://arxiv.org/abs/1806.03793" target="_blank">[arXiv]</a>
+                                </li>
+                                <li>
+                                    Tianpei Yang, Jianye Hao, Zhaopeng Meng, Chongjie Zhang, Yan Zheng, Ze Zheng
+                                    <strong>Bayes-ToMoP: A Fast Detection and Best Response Algorithm Towards
+                                        Sophisticated Opponents.</strong>
+                                    Proc. of the 18th International Conference on Autonomous Agents and Multiagent
+                                    Systems (AAMAS) , 2019.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aamas19-Bayes-ToMoP.pdf"
+                                        download>[PDF]</a>
+                                    <a href="https://arxiv.org/abs/1809.04240" target="_blank">[arXiv]</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div id="content-2018">
+                            <div class="title">
+                                2018
+                            </div>
+                            <ul>
+                                <li>
+                                    Guangxiang Zhu*, Jianhao Wang*, Zhizhou Ren*, Chongjie Zhang.
+                                    <strong>Object-Oriented Dynamics Learning through Multi-Level Abstraction.</strong>
+                                    Deep Reinforcement Learning Workshop, NeurIPS , 2018.
+                                    <a href="https://drive.google.com/file/d/0B_utB5Y8Y6D5d3A0aVdGOE5ueHJ2dkpoM3kybzRsaTlwLVFR/view"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Guangxiang Zhu, Zhiao Huang, Chongjie Zhang.
+                                    <strong>Object-Oriented Dynamics Predictor.</strong>
+                                    Advances in Neural Information Processing Systems (NeurIPS), 2018.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/OODP.pdf" download>[PDF]</a>
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/oodp-supplementary.pdf"
+                                        target="_blank">[Supplementary]</a>
+                                    <a href="https://github.com/mig-zh/OODP" target="_blank">[Code]</a>
+                                    <a href="https://arxiv.org/abs/1806.07371" target="_blank">[arXiv]</a>
+                                </li>
+
+                                <li>
+                                    Chenlan Wang, Chongjie Zhang, X. Jessie Yang.
+                                    <strong>Automation Reliability and Trust: A Bayesian Inference Approach.</strong>
+                                    Proceedings of the 62nd Human Factors and Ergonomics Society Annual Meeting (HFES) ,
+                                    202-206, 2018. [Best Student Paper 3rd Prize, HFES CEDM-TG].
+                                    <a href="http://journals.sagepub.com/doi/abs/10.1177/1541931218621048"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Changhoon Kim, Mengyuan Zhang, Chongjie Zhang, X. Jessie Yang.
+                                    <strong>Trust Dynamics in Sequential Decision Making.</strong>
+                                    Proceedings of the 62nd Human Factors and Ergonomics Society Annual Meeting (HFES),
+                                    165-166, 2018.
+                                    <a href="http://journals.sagepub.com/doi/abs/10.1177/1541931218621038"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Siyuan Li, Chongjie Zhang.
+                                    <strong>An Optimal Online Method of Selecting Source Policies for Reinforcement
+                                        Learning.</strong>
+                                    AAAI Conference on Artificial Intelligence (AAAI), 2018.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aaai-2018.pdf"
+                                        download>[PDF]</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div id="content-2017">
+                            <div class="title">
+                                2017
+                            </div>
+                            <ul>
+
+                                <li>
+                                    Ramya Ramakrishnan, Chongjie Zhang, Julie A. Shah.
+                                    <strong>Perturbation Training for Human-Robot Teams.</strong>
+                                    Journal of Artificial Intelligence Research (JAIR), 2017.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/jair-17.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Dan Garant, Bruno Da Silva, Victor Lesser, Chongjie Zhang.
+                                    <strong>Context-Based Concurrent Experience Sharing in Multiagent Systems.</strong>
+                                    International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2017.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aamas-2017.pdf"
+                                        download>[PDF]</a>
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/arXiv-17.pdf"
+                                        target="_blank">[arXiv]</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="content-2016">
+                            <div class="title">
+                                2016 & Before
+                            </div>
+                            <ul>
+
+                                <li>
+                                    Chongjie Zhang, Julie A. Shah.
+                                    <strong>Co-Optimizing Task and Motion Planning.</strong>
+                                    IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2016.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/2016-IROS.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Julie A. Shah.
+                                    <strong>Co-Optimization Multi-Agent Placement with Task Assignment and
+                                        Scheduling.</strong>
+                                    International Joint Conference on Artificial Intelligence (IJCAI), 2016.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/ijcai-16.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Julie A. Shah.
+                                    <strong>On Fairness in Decision-Making under Uncertainty: Definitions, Computation,
+                                        and Comparison.</strong>
+                                    AAAI Conference on Artificial Intelligence (AAAI), 2015.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/zhang-aaai15.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Julie A. Shah.
+                                    <strong>Fairness in Multi-Agent Sequential Decision-Making.</strong>
+                                    Advances in Neural Information Processing Systems (NIPS), 2014.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/zhang-nips14.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Nguyen Duc Thien, William Yeoh, Hoong Chuin Lau, Shlomo Zilberstein, Chongjie Zhang.
+                                    <strong>Decentralized Multi-Agent Reinforcement Learning in Average-Reward Dynamic
+                                        DCOPs.</strong>
+                                    AAAI Conference on Artificial Intelligence (AAAI), 2014.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aaai14.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Nguyen, Duc Thien, William Yeoh, Hoong Chuin Lau, Shlomo Zilberstein, Chongjie
+                                    Zhang.
+                                    <strong>Decentralized Multi-Agent Reinforcement Learning in Average-Reward Dynamic
+                                        DCOPs (Extended Abstract).</strong>
+                                    International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2014.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aamas14.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Victor Lesser.
+                                    <strong>Coordinating Multi-Agent Reinforcement Learning with Limited
+                                        Communication.</strong>
+                                    International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2013.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/zhang-aamas13.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Xiangbin Zhu, Chongjie Zhang, Victor Lesser.
+                                    <strong>Combining Dynamic Reward Shaping and Action Shaping for Coordinating
+                                        Multi-Agent Learning.</strong>
+                                    IEEE/WIC/ACM International Conference on Intelligent Agent Technology (IAT), 2013.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/IAT13.pdf" download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Dan Corkill, Chongjie Zhang, Bruno da Silva, Yoonheui Kim, Xiaoqin (Shelley) Zhang,
+                                    Victor Lesser.
+                                    <strong>Biasing the Behavior of Organizationally Adept Agents (Extended
+                                        Abstract).</strong>
+                                    International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2013.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aamas13.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Victor Lesser.
+                                    <strong>Coordinating Multi-Agent Learning for Decentralized POMDPs.</strong>
+                                    International Workshop on Multiagent Sequential Decision Making Under Uncertainty
+                                    (MSDM), 2012.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/zhang-msdm-12.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Dan Corkill, Chongjie Zhang, Bruno da Silva, Yoonheui Kim, Xiaoqin (Shelley) Zhang,
+                                    Victor Lesser.
+                                    <strong>Using Annotated Guidelines to Influence the Behavior of Organizationally
+                                        Adept Agents.</strong>
+                                    International Workshop on Coordination, Organization, Institutions, and Norms
+                                    (COIN@AAMAS), 2012.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/coin-12.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Xiaoqin Shelley Zhang, Sungwook Yoon, Phillip DiBona, Darren Scott Appling, Li Ding,
+                                    Janardhan Rao Doppa, Derek Green, Jinhong K Guo, Ugur Kuter, Geoff Levine, Reid L
+                                    MacTavish, Daniel McFarlane, James R Michaelis, Hala Mostafa, Bhavesh Shrestha,
+                                    Zhexuan Song, Ethan B Trewhitt, Huzaifa Zafar, Chongjie Zhang, et al.
+                                    <strong>An Ensemble Architecture for Learning Complex Problem-Solving Techniques
+                                        from Demonstration.</strong>
+                                    ACM Transactions on Intelligent Systems and Technology (TIST), 2012.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/TIST-12.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Victor Lesser.
+                                    <strong>Coordinated Multi-Agent Reinforcement Learning in Networked Distributed
+                                        POMDPs.</strong>
+                                    AAAI Conference on Artificial Intelligence (AAAI), 2011.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aaai2011_zhang.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Daniel Corkill, Edmund Durfee, Victor Lesser, Huzaifa Zafar, Chongjie Zhang.
+                                    <strong>Organizationally Adept Agents.</strong>
+                                    International Workshop on Coordination, Organization, Institutions and Norms in
+                                    Agent Systems (COIN@AAMAS 2011), 2011.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/coin11.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang.
+                                    <strong>Scaling Multi-Agent Learning in Complex Environments.</strong>
+                                    Ph.D. Dissertation, 2011.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/dissertation.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Victor Lesser.
+                                    <strong>Multi-Agent Learning with Policy Prediction.</strong>
+                                    AAAI Conference on Artificial Intelligence (AAAI), 2010.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aaai2010_zhang.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Victor Lesser, Sherief Abdallah.
+                                    <strong>Self-Organization for Coordinating Decentralized Reinforcement
+                                        Learning.</strong>
+                                    International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2010.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aamas2010_zhang.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang and Victor Lesser, Prashant Shenoy.
+                                    <strong>A Multi-Agent Learning Approach to Online Distributed Resource
+                                        Allocation.</strong>
+                                    International Joint Conference on Artificial Intelligence (IJCAI), 2009.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/ijcai09.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Victor Lesser, Sherief Abdallah.
+                                    <strong>Integrating Organizational Control into Multi-Agent Learning.</strong>
+                                    International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2009.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aamas09.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Xiaoqin Shelley Zhang, Sungwook Yoon, Phillip DiBona, Darren Scott Appling, Li Ding,
+                                    Janardhan Rao Doppa, Derek Green, Jinhong K Guo, Ugur Kuter, Geoff Levine, Reid L
+                                    MacTavish, Daniel McFarlane, James R Michaelis, Hala Mostafa, Bhavesh Shrestha,
+                                    Zhexuan Song, Ethan B Trewhitt, Huzaifa Zafar, Chongjie Zhang, et al.
+                                    <strong>An Ensemble Learning and Problem-Solving Architecture for Airspace
+                                        Management.</strong>
+                                    Annual Conference on Innovative Applications of Artificial Intelligence (IAAI),
+                                    2009.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/GILA_IAAI.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Victor Lesser, Sherief Abdallah.
+                                    <strong>Efficient Multi-Agent Reinforcement Learning through Automated Supervision
+                                        (Short Paper).</strong>
+                                    International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2008.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/aamas08.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Chirag Dekate, Gabrielle Allen, Ian Kelley, Jon MacLaren.
+                                    <strong>An Application Portal for Collaborative Coastal Modeling.</strong>
+                                    Concurrency and Computation: Practice and Experience, 2007.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/ccpe07a.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Ian Kelley, Gabrielle Allen.
+                                    <strong>Grid Portal Solutions: A Comparison of GridPortlets and OGCE.</strong>
+                                    Concurrency and Computation: Practice and Experience, 2007.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/ccpe07b.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Gabrielle Allen, Promita Chakraborty, Dayong Huang, Zhou Lei, John Lewis,
+                                    Christopher White, Xiaoxi Xu, Chongjie Zhang.
+                                    <strong>A Workflow Approach to Designed Reservoir Study.</strong>
+                                    Workshop on Workflows in Support of Large-Scale Science (WORKS), 2007.
+                                    <a href="http://portal.acm.org/citation.cfm?doid=1273360.1273374" download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Jon MacLaren, Gabrielle Allen, Chirag Dekate, Dayong Huang, Andrei Hutanu, Chongjie
+                                    Zhang.
+                                    <strong>Shelter from the Storm: Building a Safe Archive in a Hostile World.</strong>
+                                    Lecture Notes in Computer Science, 2005.
+                                    <a href="http://people.iiis.tsinghua.edu.cn/~zhang/pub/lncs05.pdf"
+                                        download>[PDF]</a>
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Chirag Dekate, Gabrielle Allen, Ian Kelley, Jon MacLaren.
+                                    <strong>An Application Portal for Collaborative Coastal Modeling.</strong>
+                                    International Workshop on Grid Computing Environments (GCE), 2005. (Best Paper
+                                    Award)
+                                </li>
+                                <li>
+                                    Chongjie Zhang, Ian Kelley, Gabrielle Allen.
+                                    <strong>Grid Portal Solutions: A Comparison of GridPortlets and OGCE.</strong>
+                                    International Workshop on Grid Computing Environments (GCE), 2005.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // header drawer
+    var drawer = document.querySelector(".drawer-handle");
+    var nav = document.querySelector(".nav");
+    drawer.addEventListener("click", function (e) {
+        var e = e || window.event, target = e.target || e.srcElement; // 兼容IE
+        if (target.className === "drawer-handle") {
+            target.className = "drawer-handle drawer-open";
+            nav.className = "nav nav-open";
+            document.body.style.position = "fixed";
+        } else {
+            target.className = "drawer-handle";
+            nav.className = "nav";
+            document.body.style.position = "relative";
+        }
+    })
+    // pc端滚动时间轴
+    var menu = document.querySelector(".menu");
+    var article = document.querySelector(".publication-content");
+    var titles = document.querySelectorAll(".publication-content .title");
+    var activeItem = "";
+    article.addEventListener("scroll", function () {
+        var e = e || window.event, target = e.target || e.srcElement; // 兼容IE
+        // scrollHeight 整个容器高度（包括scroll隐藏那部分）
+        // clientHeight 可视区域高度
+        // scrollTop 滚动已隐藏高度
+        Array.prototype.slice.call(titles).forEach(function (e, i) {
+            if (e.offsetTop - article.scrollTop > 30 && e.offsetTop - article.scrollTop < 300 && e.className != "title active") {
+            // console.log(e.offsetTop - article.scrollTop) // 相对窗口的偏移
+                document.querySelector(".publication-content .title.active").className = "title";
+                e.className = "title active";
+                Array.prototype.slice.call(menu.children).forEach(function (u) {
+                    u.className = "";
+                    if (u.innerText === e.innerText) {
+                        u.className = "active"
+                    }
+                });
+            }
+        });
+    })
+    menu.addEventListener("click", function (e) {
+        var e = e || window.event, target = e.target || e.srcElement; // 兼容IE
+        document.querySelector(".menu>.active").className = "";
+        target.className = "active";
+        var activeItem = document.querySelector(".publication-content #content-" + target.innerText.split(" ")[0]);
+        // 容器滚动隐藏高度设置为，目标元素的偏移高度
+        article.scrollTop = activeItem.offsetTop - 200;
+    })
+
+</script>
+
+</html>

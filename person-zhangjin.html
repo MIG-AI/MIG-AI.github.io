@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./common.css">
+    <style>
+        .content .name {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px 0;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 200px;
+            background-size: cover;
+            background-position: center center;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+        }
+
+        .description {
+            padding: 20px 0;
+        }
+    </style>
+    <title>People</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="concent-wrap">
+            <header class="header">
+                <div class="logo"></div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="active"><a href="./people.html">People</a></li>
+                        <li><a href="./publications.html">Publications</a></li>
+                        <li><a href="./news.html">News</a></li>
+                        <li><a href="./join.html">Join</a></li>
+                        <li><a href="./cn/person-zhangjin.html">简体中文</a></li>
+                    </ul>
+                </nav>
+                <div class="drawer-handle">
+                    <div class="drawer-mask"></div>
+                    <i class="drawer-handle-icon"></i>
+                </div>
+            </header>
+            <div class="content">
+                <div class="name">Jin Zhang</div>
+                <div class="avatar" style="background-image: url('./asset/zhangjin-1.jpg');"></div>
+                <p style="margin-bottom: 0;"><span style="font-weight: bold;">PhD Candidate</span> <br />
+                    (No.) 35 E(ast) Qinghua Road, Haidian District,Beijing 100083, China<br />
+                    <a href="mailto:jin-zhan20@mails.tsinghua.edu.cn">jin-zhan20@mails.tsinghua.edu.cn</a> </p>
+                <div class="description">
+                    I am a graduate student in the Institute for Interdisciplinary Information Sciences at Tsinghua University,
+                     starting from September 2020. My research interests mainly focus on meta-RL. I receive my bachelor degree 
+                     from the Department of Electronic Engineering, Tsinghua University in July 2020.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var drawer = document.querySelector(".drawer-handle");
+    var nav = document.querySelector(".nav");
+    drawer.addEventListener("click", function (e) {
+        var e = e || window.event, target = e.target || e.srcElement; // 兼� IE
+        if (target.className === "drawer-handle") {
+            target.className = "drawer-handle drawer-open";
+            nav.className = "nav nav-open";
+            document.body.style.position = "fixed";
+        } else {
+            target.className = "drawer-handle";
+            nav.className = "nav";
+            document.body.style.position = "relative";
+        }
+    })
+</script>
+
+</html>

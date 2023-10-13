@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./common.css">
+    <style>
+        .person+.person {
+            border-top: 2px solid rgba(64, 64, 64, 0.8);
+        }
+
+        .person .title {
+            text-align: left;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .person ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .person ul li {
+            list-style: none;
+            overflow: hidden;
+            display: inline-block;
+            margin: 20px 40px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 200px;
+            background-size: cover;
+            background-position: center center;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+        }
+
+        .info {
+            text-align: center;
+        }
+
+        .info p {
+            font-size: 18px;
+            padding: 5px;
+            margin: 0;
+        }
+
+        .info p a {
+            text-decoration: none;
+        }
+
+        /* .content>div:nth-of-type(1) .avatar {
+            width: 200px;
+            height: 265px;
+        }
+
+        .content>div:nth-of-type(1) .info p {
+            line-height: 2;
+        } */
+
+        @media screen and (max-width:649px) {
+            /* .content>div:nth-of-type(1) .avatar {
+                float: none !important;
+                margin: 0 auto;
+                width: 90%;
+                padding-top: 125%;
+                height: 0;
+                background-position: 0 0;
+                background-origin: border-box;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            .content>div:nth-of-type(1) .info {
+                padding-left: 0 !important;
+            }
+
+            .content>div:nth-of-type(1) .info>p:nth-of-type(1) {
+                text-align: center;
+            } */
+
+            .person ul {
+                text-align: center;
+            }
+        }
+    </style>
+    <title>People</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="concent-wrap">
+            <header class="header">
+                <div class="logo"></div>
+                <nav class="nav">
+                    <ul>
+                       <li><a href="./index.html">首页</a></li>
+                        <li  class="active"><a href="./people.html">人员</a></li>
+                        <li><a href="./publications.html">论文</a></li>
+                        <li><a href="./news.html">新闻动态</a></li>
+                        <li><a href="./join.html">加入我们</a></li>
+                        <li><a href="../people.html">English</a></li>
+                    </ul>
+                </nav>
+                <div class="drawer-handle">
+                    <div class="drawer-mask"></div>
+                    <i class="drawer-handle-icon"></i>
+                </div>
+            </header>
+            <div class="content">
+                <div class="person">
+                    <div class="title">教师</div>
+                    <ul>
+                        <li style="margin:none;margin-bottom: 10px;">    
+                            <div class="avatar" style="background-image: url('./asset/zhangchongjie.jpg');float: left;">
+                            </div>
+                            <div class="info">
+                                <p><a href="./person-zhangchongjie.html" >张崇洁</a></br>
+                                    <font size = "3"> 助理教授</font>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="person">
+                    <div class="title">研究生</div>
+                    <ul>
+
+
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/lisiyuan.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-lisiyuan.html" >李斯源</a></br>
+                                    <font size = "3">博士研究生</font>
+                                </p>
+                            </div>
+                        </li>
+
+<!--                        <li>-->
+<!--                            <div class="avatar" style="background-image: url('./asset/chenghao.jpg');"></div>-->
+<!--                            <div class="info">-->
+<!--                                <p><a href="./person-chenghao.html">程浩</a></br>-->
+<!--                                    <font size = "3">博士研究生</font>-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/wangjianhao.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-wangjianhao.html" >王鉴浩</a></br>
+                                    <font size = "3">博士研究生</font>
+                                </p>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="avatar" style="background-image: url('./asset/wuchengjie.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-wuchengjie.html" >吴澄杰</a></br>
+                                    <font size = "3">博士研究生</font>
+                                </p>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/huhao.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-huhao.html" >胡昊</a></br>
+                                    <font size = "3">硕士研究生</font>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/zhenglulu.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-zhenglulu.html" >郑璐璐</a></br>
+                                    <font size = "3">硕士研究生</font>
+                                </p>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="avatar" style="background-image: url('./asset/luyiming.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-luyiming.html" >陆依鸣</a></br>
+                                    <font size = "3">硕士研究生</font>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/dongheng.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-dongheng.html" >董恒</a></br>
+                                    <font size = "3">博士研究生</br></font>
+                                    <!--<font size = "2.5">(Plan to join in 2020)</font>-->
+                                </p>
+                            </div>
+                        </li>
+                       
+                        
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/zhangjin-1.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-zhangjin.html" >张进</a></br>
+                                    <font size = "3">博士研究生</br></font>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/maoyihuan.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-maoyihuan.html" >毛怡欢</a></br>
+                                    <font size = "3">博士研究生</br></font>
+                                </p>
+                            </div>
+                        </li>
+						
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/yejianing.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-yejianing.html" >叶珈宁</a></br>
+                                    <font size = "3">硕士研究生</br></font>
+<!--									<font size = "2.5">(2021年入学)</font>-->
+                                </p>
+                            </div>
+                        </li>
+                       
+                        
+                        
+                        
+                        
+                    </ul>
+                </div>
+                <div class="person">
+                    <div class="title">本科生</div>
+                    <ul>
+
+                        
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/zhangminghao.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-zhangminghao.html" target="_blank">张铭昊</a></br>
+                                    <font size = "3">本科生</font>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/hanbeining.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-hanbeining.html" target="_blank">韩贝宁</a></br>
+                                    <font size = "3">本科生</font>
+                                </p>
+                            </div>
+                        </li>
+
+                         <li>
+                            <div class="avatar" style="background-image: url('./asset/yangqianlan.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-yangqianlan.html" target="_blank">杨乾澜</a></br>
+                                    <font size = "3">本科生</font>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/lizhengyuan.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-lizhengyuan.html" target="_blank">李正远</a></br>
+                                    <font size = "3">本科生</font>
+                                </p>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="avatar" style="background-image: url('./asset/jianghaozhe.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-jianghaozhe.html" target="_blank">江昊哲</a></br>
+                                    <font size = "3">本科生</font>
+                                </p>
+                            </div>
+                        </li>
+                          <li>
+                            <div class="avatar" style="background-image: url('./asset/dongweijun.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-dongweijun.html" target="_blank">董炜隽</a></br>
+                                    <font size = "3">本科生</font>
+                                </p>
+                            </div>
+                        </li>
+                          <li>
+                            <div class="avatar" style="background-image: url('./asset/shichengming.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-shichengming.html" target="_blank">施铖铭</a></br>
+                                    <font size = "3">本科生</font>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="person">
+                    <div class="title">访问学者</div>
+                    <ul>
+
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/zhengchongyi.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-zhengchongyi.html" >郑崇义</a></br>
+                                <font size = "3">访问学者</font>
+                                </p>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="avatar" style="background-image: url('./asset/hejiamin.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-hejiamin.html" >何嘉民</a></br>
+                                <font size = "3">访问学者</font>
+                                </p>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="avatar" style="background-image: url('./asset/zhuruiqi.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-zhuruiqi.html" >朱瑞琦</a></br>
+                                <font size = "3">访问学者</font>
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                 <div class="person">
+                    <div class="title">毕业生：研究生</div>
+                    <ul>
+                          <li>
+                            <div class="avatar" style="background-image: url('./asset/zhuguangxiang.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-zhuguangxiang.html">朱广翔</a></br>
+                                   <font size = "3"> 博士研究生</font>
+                                </p>
+
+                            </div>
+                        </li>
+
+                      <li>
+                            <div class="avatar" style="background-image: url('./asset/wangtonghan.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-wangtonghan.html">王同翰</a></br>
+                                    <font size = "3">硕士研究生</font>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="avatar" style="background-image: url('./asset/liuderui.jpg');"></div>
+                            <div class="info">
+                                <p><a href="./person-liuderui.html" >刘得锐</a></br>
+                                    <font size = "3">硕士研究生</font>
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+                <div class="person">
+                    <div class="title">毕业生：本科生</div>
+                    <ul>
+<!--                        	<li>-->
+<!--                            <div class="avatar" style="background-image: url('./asset/renzhizhou.jpg');"></div>-->
+<!--                            <div class="info">-->
+<!--                                <p><a href="./person-renzhizhou.html" >任之洲</a></br>-->
+<!--                                    <font size = "3">本科生</font>-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <div class="avatar" style="background-image: url('./asset/hanchi.png');"></div>-->
+<!--                            <div class="info">-->
+<!--                                <p><a href="./person-hanchi.html">韩迟</a></br>-->
+<!--                                    <font size = "3">本科生</font>-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+                         <div class="description">
+                             任之洲, 2020. (Ph.D. Student at University of Illinois at Urbana-Champaign)<br>
+                             韩迟, 2020. (Ph.D. Student at University of Illinois at Urbana-Champaign)<br>
+                   张皓辰, 2019. (Ph.D. Student at Stanford)<br>
+                            顾方达,  2019. (Ph.D. Student at UC Berkeley)<br>
+            姚顺雨,  2019. (Ph.D. Student at Princeton)<br>
+            王鉴浩, 2019. (Ph.D. Student at Tsinghua)<br>
+            吴睿涵, 2018. (Ph.D. Student at Cornell)<br>
+            贺子航, 2018. (Ph.D. Student at UT Austin)<br>
+            黄志翱,2018. (Ph.D. Student at UC San Diego)<br>
+            宋鑫梁, 2018. (Ph.D. Student at ETH Zurich)<br>
+
+
+                </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var drawer = document.querySelector(".drawer-handle");
+    var nav = document.querySelector(".nav");
+    drawer.addEventListener("click", function (e) {
+        var e = e || window.event, target = e.target || e.srcElement; // 鍏煎 IE
+        if (target.className === "drawer-handle") {
+            target.className = "drawer-handle drawer-open";
+            nav.className = "nav nav-open";
+            document.body.style.position = "fixed";
+        } else {
+            target.className = "drawer-handle";
+            nav.className = "nav";
+            document.body.style.position = "relative";
+        }
+    })
+</script>
+
+</html>
